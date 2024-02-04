@@ -1,7 +1,7 @@
 
 import{RecoilRoot} from "recoil"
-import { Todos } from "./Components"
-import {Filter} from "./Components"
+import { Todos } from "./Components/Todos"
+import {Filter} from "./Components/Filter"
 
 
 // can use memo to prevent the rerenddering of all the todos 
