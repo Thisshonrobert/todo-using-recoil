@@ -1,6 +1,7 @@
-import {todosAtom} from "./store/atoms/Count"
+import {todosAtom} from "../store/atoms/Count"
 import { useState } from "react"
 import{ useRecoilState} from "recoil"
+import {Filter} from "../Components/Filter"
 
 let Id = 1;
 export function Todos(){
@@ -33,6 +34,7 @@ export function Todos(){
             </li>
           ))}
         </ul>
+        <Filter/>
        
       </div>
     )

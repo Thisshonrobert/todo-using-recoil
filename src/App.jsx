@@ -1,7 +1,7 @@
 
 import{RecoilRoot} from "recoil"
 import { Todos } from "./Components/Todos"
-import {Filter} from "./Components/Filter"
+
 
 
 // can use memo to prevent the rerenddering of all the todos 
@@ -15,7 +15,6 @@ function App() {
     <div>
      <RecoilRoot>
      <Todos/>
-     <Filter/>
      </RecoilRoot>
     </div>
   )

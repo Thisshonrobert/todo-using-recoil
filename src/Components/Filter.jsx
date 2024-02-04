@@ -1,9 +1,9 @@
 
-import {filterAtom,filteredTodos} from "./store/atoms/Count"
+import {filterAtom,filteredTodos} from "../store/atoms/Count"
 import{useSetRecoilState,useRecoilValue} from "recoil"
 import _debounce from 'lodash/debounce';
 
-export default function Filter(){
+export  function Filter(){
     const setFilter = useSetRecoilState(filterAtom)
     const filtered = useRecoilValue(filteredTodos);
     function applyFilter(){
@@ -13,6 +13,7 @@ export default function Filter(){
     return(
       <div>
          <button onClick={debouncedApplyFilter}>filter</button>
+         <h1>Filtered:</h1>
       {
         filtered.map((filteredOne)=>(
           <li key={filteredOne.id}>
