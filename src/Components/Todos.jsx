@@ -25,7 +25,7 @@ export function Todos(){
        <input  placeholder="title" onChange={e=> setTitle(e.target.value)}></input>
        <input placeholder="description" onChange={e=> setDescription(e.target.value)}></input>
        <button onClick={addTodo}>add todo</button><br></br>
-       <input id="filter" placeholder="type what you want to filter" ></input>
+       <input id="filter" placeholder="filter" ></input>
        
        <ul>
           {todos.map((todo) => (
